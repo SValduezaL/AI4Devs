@@ -28,13 +28,6 @@ conda activate ai4devs
 
 ---
 
-## 🔒 Privacidad y uso
-
-Este repositorio es privado y se utiliza exclusivamente como entorno de práctica y entrega de ejercicios.
-No se permite la difusión pública del contenido del curso ni de los materiales compartidos por AI4Devs.
-
----
-
 ## 🧠 Objetivo
 
 Centralizar todo el contenido práctico del curso AI4Devs 2025/10 Rookies:
@@ -49,6 +42,33 @@ Documentación de aprendizajes clave.
 
 ---
 
+## 📥 Cómo se integraron las demos
+
+Ambas demos se integraron usando `git subtree` (no submódulos), lo que significa que:
+
+- El código está **copiado dentro del repo** (no depende de repos externos).
+- Puedes modificarlo sin afectar los originales.
+- Puedes actualizarlo más adelante con:
+```
+# Claude Code Demo
+git subtree pull --prefix=demos/claude-code-demo https://github.com/LIDR-academy/claude-code-demo.git main --squash
+
+# Gas Station Bot
+git subtree pull --prefix=demos/gas-station-bot https://github.com/reverload/gas-station-bot.git main --squash
+```
+
+---
+
+## 🔒 Privacidad y licencias
+
+- Este repositorio es privado y de uso educativo.
+- Las demos incluidas mantienen sus licencias originales:
+  - `claude-code-demo`: MIT (uso libre con atribución).
+  - `gas-station-bot`: GPL-3.0 (requiere mantener la misma licencia si se redistribuye).
+- Si en el futuro haces público este repositorio, revisa las condiciones de ambas licencias.
+
+---
+
 ## 🧑‍💻 Autor
 
 Sergio Valdueza Lozano
@@ -59,6 +79,9 @@ Sergio Valdueza Lozano
 
 ---
 
-## 🧾 Licencia
+## 🧾 Licencia del repositorio
 
-Todos los derechos reservados © 2025 – Uso educativo y personal.
+© 2025 Sergio Valdueza Lozano — Uso educativo y personal.
+
+Todos los derechos reservados.
+
