@@ -14,8 +14,8 @@ Cada subcarpeta conserva su estructura original. Para detalles de instalación/u
   cp .env.example .env   # añade tu OPENAI_API_KEY
   npm install            # o yarn / pnpm
   npm run dev
+  # abre http://localhost:3000
   ```
-  abre http://localhost:3000
 
 ### `gas-station-bot`
 - **Origen:** everload/gas-station-bot
