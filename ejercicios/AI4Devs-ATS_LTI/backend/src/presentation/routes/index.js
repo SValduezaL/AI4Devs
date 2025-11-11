@@ -6,7 +6,7 @@ const router = express.Router();
 // Health check
 router.get('/', (req, res) => {
     res.json({ 
-        message: 'LTI ATS Backend API',
+        message: 'Rutas de LTI ATS',
         version: '0.0.0.0',
         status: 'running'
     });

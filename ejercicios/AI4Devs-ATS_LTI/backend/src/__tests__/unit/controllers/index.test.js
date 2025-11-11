@@ -1,19 +1,20 @@
 import { describe, it, expect, jest } from '@jest/globals';
-import { getHealth } from '../../../controllers/index.js';
+import { getHealthController } from '../../../controllers/index.js';
 
 describe('Controllers - Index', () => {
-    describe('getHealth', () => {
+    describe('getHealthController', () => {
         it('debería retornar un objeto con status ok', () => {
             const req = {};
             const res = {
                 json: jest.fn()
             };
 
-            getHealth(req, res);
+            getHealthController(req, res);
 
             expect(res.json).toHaveBeenCalledWith({
                 status: 'ok',
-                message: 'LTI ATS Backend está funcionando'
+                message: 'LTI ATS Backend está funcionando',
+                timestamp: expect.any(String)
             });
         });
     });
