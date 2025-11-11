@@ -1,0 +1,93 @@
+# ============================================
+# Backend - Git Ignore
+# ============================================
+
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Testing
+coverage/
+.nyc_output/
+*.test.js.snap
+.jest/
+*.lcov
+test-results/
+playwright-report/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env*.local
+.env.test
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Build outputs
+dist/
+build/
+out/
+.next/
+
+# Prisma
+# Nota: Las migraciones SÍ se versionan, pero no los archivos generados
+prisma/migrations/*.sql
+!prisma/migrations/migration_lock.toml
+# Archivos generados por Prisma (se regeneran con npm run db:generate)
+# No ignorar prisma/schema.prisma (debe versionarse)
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+.temp/
+tmp/
+temp/
+
+# TypeScript (si se agrega)
+*.tsbuildinfo
+.tsbuildinfo
+
+# Misc
+*.pid
+*.seed
+*.pid.lock
+.npm
+.eslintcache
